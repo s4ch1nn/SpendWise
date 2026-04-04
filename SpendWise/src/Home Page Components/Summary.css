@@ -1,0 +1,17 @@
+.Summary{
+  border-style: none;
+  border: none;
+  border-radius: 25px;
+  min-width: 831px;
+  margin-left: 70px;
+  width: 58.7%;
+  background-color: white;
+  height: 250px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  padding-left: 25px;
+}
+.bar{
+  height: 20px;
+  background-color: red;
+  width: 46%;
+}

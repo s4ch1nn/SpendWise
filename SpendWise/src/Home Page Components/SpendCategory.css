@@ -1,0 +1,16 @@
+.Category{
+    background-color: white;
+    flex: 1;
+    margin-right: 70px;
+    margin-left: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    height: 40vh;
+    margin-top: 20px;
+    border-style: none;
+    border: none;
+    border-radius: 25px;
+    min-width: 427px;
+}
+h2{
+    text-align: center;
+}
