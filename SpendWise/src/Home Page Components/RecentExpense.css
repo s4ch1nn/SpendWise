@@ -27,9 +27,41 @@
     border-color: rgba(143, 145, 147,0.7);
     border-radius: 12px;
 }
+.dropDown:hover{
+    cursor: pointer;
+}
 .inner{
     width: 97.5%;
     height: 430px;
-    background-color: red;
     margin-top: 10px;
+    overflow: auto;
+}
+.del
+{
+    width: 60px;
+    
+}
+.del:hover{
+  cursor: pointer;
+}
+.history {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.history tbody tr {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.date 
+.cate
+.Delete
+{
+    width: 200px;
+}
+.Description{
+    width: 25%;
+}
+.x:hover{
+    cursor: pointer;
 }

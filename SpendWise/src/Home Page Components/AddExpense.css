@@ -64,6 +64,9 @@ button:hover {
     border-color: rgba(143, 145, 147,0.7);
     border-radius: 12px;
 }
+.category:hover{
+    cursor: pointer;
+}
 p{
     margin-bottom: 5px;
 }

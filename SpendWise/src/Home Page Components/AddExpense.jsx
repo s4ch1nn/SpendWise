@@ -6,7 +6,7 @@ export function AddExpense({setData}){
     const [Description, setDescription]=useState("");
     const [Amount, setAmount]=useState(0);
     const [date, setDate]=useState(today);
-    const [Category, setCategory]=useState("");
+    const [Category, setCategory]=useState("Food");
 
     function addData(){
         setData(prev=> [
@@ -20,6 +20,10 @@ export function AddExpense({setData}){
             }
         ]);
         
+        setDescription("");
+        setAmount("");
+        setDate(today);
+        setCategory("Food");
     }
 
     return(
@@ -28,17 +32,17 @@ export function AddExpense({setData}){
             <div className="AddExpense1">
                 <div>
                     <p style={{fontSize:"20px"}}>Description</p>
-                    <input type="text" defaultValue={Description} name="Description" id="" onChange={(e) => setDescription(e.target.value)}  placeholder="e.g., Groceries"/>
+                    <input value={Description} maxLength={25} type="text"  name="Description" id="" onChange={(e) => setDescription(e.target.value)}  placeholder="e.g., Groceries"/>
                 </div>
                 <div>
                     <p style={{fontSize:"20px"}}>Amount ($)</p>
-                    <input type="number" defaultValue={Amount} name="Amount" id="" onChange={(e) => setAmount(e.target.value)} />
+                    <input value={Amount} type="number" name="Amount" id="" onChange={(e) => setAmount(e.target.value)} />
                 </div>
             </div>
             <div className="AddExpense1">
                 <div>
                     <p style={{fontSize:"20px", width:"100%"}}>Date</p>
-                    <input style={{width:"98%", height:"55px"}} type="date" defaultValue={today} name="date" id="" onChange={(e) => setDate(e.target.value)}/>
+                    <input value={date} style={{width:"98%", height:"55px" }} type="date" name="date" className='x' onChange={(e) => setDate(e.target.value)}/>
                 </div>
                 <div>
                     <p style={{fontSize:"20px"}}>Category</p>
