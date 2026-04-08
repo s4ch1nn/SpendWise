@@ -22,11 +22,11 @@ export function Summary({data}){
             <h2>Overview</h2>
             <h1>Total Expenses: </h1>
             <div className='bar'>
-                <div style={{width:`${food}%`, backgroundColor:"blue",borderTopLeftRadius: "40px",borderBottomLeftRadius: "40px"}}></div>
+                <div style={{width:`${food}%`, backgroundColor:"blue"}}></div>
                 <div style={{width:`${trans}%`, backgroundColor:"green"}}></div>
                 <div style={{width:`${util}%`, backgroundColor:"yellow"}}></div>
                 <div style={{width:`${enter}%`, backgroundColor:"pink"}}></div>
-                <div style={{width:`${other}%`, backgroundColor:"orange",borderTopRightRadius: "40px",borderBottomRightRadius: "40px"}}></div>
+                <div style={{width:`${other}%`, backgroundColor:"orange"}}></div>
             </div>
         </div>
     )
