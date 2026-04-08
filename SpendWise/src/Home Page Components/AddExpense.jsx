@@ -21,7 +21,7 @@ export function AddExpense({setData}){
         ]);
         
         setDescription("");
-        setAmount("");
+        setAmount(0);
         setDate(today);
         setCategory("Food");
     }

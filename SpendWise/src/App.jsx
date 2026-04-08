@@ -23,7 +23,7 @@ function HomePage() {
       </div>
       <div className='snd'>
         <RecentExpense data={data} setData={setData} />
-        <SpendCategory />
+        <SpendCategory data={data} />
       </div>
     </>
   )
